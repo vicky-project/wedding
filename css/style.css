@@ -1009,6 +1009,7 @@ form label {
   text-transform: uppercase;
   /*font-size: 12px;*/
   font-size: 8px;
+  margin-bottom: 0.5em;
   /* words */
 }
 

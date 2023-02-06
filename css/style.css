@@ -1001,6 +1001,7 @@ form label {
 .simply-countdown > .simply-section .simply-amount {
   font-size: 30px;
   /*font-size: 10px;*/
+  margin-bottom: 0.9em;
   /* amounts */
 }
 
@@ -1009,7 +1010,6 @@ form label {
   text-transform: uppercase;
   font-size: 12px;
   /*font-size: 8px;*/
-  margin-bottom: 2em;
   /* words */
 }
 

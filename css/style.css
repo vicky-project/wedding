@@ -953,8 +953,8 @@ form label {
 
 .simply-countdown {
   /* The countdown */
-  /*margin-bottom: 2em;*/
-  margin-bottom: 0.5em;
+  margin-bottom: 2em;
+  /*margin-bottom: 0.5em;*/
 }
 
 .simply-countdown > .simply-section {

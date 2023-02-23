@@ -206,9 +206,6 @@
       $("#receiver").text(vars.for);
     }
   };
-  let audio = new Audio(
-    "https://vicky-project.github.io/wedding/beautifull-in-white.mp3"
-  );
 
   $(function () {
     mobileMenuOutsideClick();

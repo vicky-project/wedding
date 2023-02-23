@@ -1,2 +1,1 @@
-
-https://vicky-project.github.io/wedding
+https://vicky-project.github.io/wedding?for=Pemirsa%20Github

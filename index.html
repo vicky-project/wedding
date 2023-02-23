@@ -327,12 +327,6 @@
 
 	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
 	<script src="js/simplyCountdown.js"></script>
-	<script>
-	  let audio = new Audio(
-    "https://vicky-project.github.io/wedding/beautifull-in-white.mp3"
-  );
-  audio.play();
-	</script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
@@ -382,7 +376,10 @@
       alert("Copy to clipboard: " + $temp.val());
       $temp.remove();
     }
-    document.getElementById("music").play();
+   let audio = new Audio(
+    "https://vicky-project.github.io/wedding/beautifull-in-white.mp3"
+  );
+  audio.play();
 </script>
 
 	</body>

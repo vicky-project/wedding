@@ -220,6 +220,5 @@
     counter();
     counterWayPoint();
     getUrlVars();
-    audio.play();
   });
 })();

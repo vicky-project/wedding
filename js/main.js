@@ -207,9 +207,12 @@
     }
   };
 
-  let audio = new Audio(
-    "https://vicky-project.github.io/wedding/beautifull-in-white.mp3"
-  );
+  let music = function () {
+    var audio = new Audio(
+      "https://vicky-project.github.io/wedding/beautifull-in-white.mp3"
+    );
+    audio.play();
+  };
 
   $(function () {
     mobileMenuOutsideClick();
@@ -224,6 +227,6 @@
     counter();
     counterWayPoint();
     getUrlVars();
-    audio.play();
+    music.play();
   });
 })();

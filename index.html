@@ -68,17 +68,15 @@
        <script src="https://cdn.jsdelivr.net/gh/SimonEast/MiniConsoleJS@main/console.js"></script>
     <script>
       let music = function () {
-        var audio = new Audio(
-          "https://vicky-project.github.io/wedding/beautifull-in-white.mp3"
-        );
+        var audio = document.getElementById("music");
         audio.play();
       };
     </script>
 	</head>
 	<body onload="music()">
-		<!--<audio id="music" autoplay="autoplay" loop="loop">-->
-		<!--  <source src="https://vicky-project.github.io/wedding/beautifull-in-white.mp3" />-->
-		<!--</audio>-->
+		<audio id="music" loop="loop">
+		  <source src="https://vicky-project.github.io/wedding/beautifull-in-white.mp3" />
+		</audio>
 		<!--<embed src="https://vicky-project.github.io/wedding/beautifull-in-white.mp3" autostart weight="20" height="0" />-->
 	<div class="fh5co-loader"></div>
 	

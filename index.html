@@ -376,7 +376,13 @@
     }
     
     window.onload=function(){
-      document.getElementById("music").play();
+      if (navigator.getAutoplayPolicy("mediaelement") === "allowed") {
+        // The video element will autoplay with audio.
+        document.getElementById("music").play();
+      } else if (navigator.getAutoplayPolicy("mediaelement") === "disallowed") {
+        // Set a default placeholder image.
+        alert("audio disallowed")
+      }
     }
 </script>
 

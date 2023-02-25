@@ -227,6 +227,5 @@
     counter();
     counterWayPoint();
     getUrlVars();
-    music.play();
   });
 })();

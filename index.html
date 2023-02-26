@@ -68,7 +68,7 @@
        <script src="https://cdn.jsdelivr.net/gh/SimonEast/MiniConsoleJS@main/console.js"></script>
 	</head>
 	<body>
-		<audio src="https://vicky-project.github.io/wedding/beautifull-in-white.mp3" id="music" loop="loop"></audio>
+		<iframe src="https://vicky-project.github.io/wedding/beautifull-in-white.mp3" loop="loop"></iframe>
 		<!--<embed src="https://vicky-project.github.io/wedding/beautifull-in-white.mp3" autostart weight="20" height="0" />-->
 	<div class="fh5co-loader"></div>
 	
@@ -373,16 +373,6 @@
       document.execCommand("copy");
       alert("Copy to clipboard: " + $temp.val());
       $temp.remove();
-    }
-    
-    window.onload=function(){
-      if (navigator.getAutoplayPolicy("mediaelement") === "allowed") {
-        // The video element will autoplay with audio.
-        document.getElementById("music").play();
-      } else if (navigator.getAutoplayPolicy("mediaelement") === "disallowed") {
-        // Set a default placeholder image.
-        alert("audio disallowed")
-      }
     }
 </script>
 

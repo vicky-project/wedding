@@ -109,4 +109,4 @@ function init() {
     );
   }
 }
-google.maps.event.addEventListener(window, "load", init);
+google.maps.event.addDomListener(window, "load", init);

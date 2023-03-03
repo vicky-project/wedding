@@ -13,12 +13,12 @@
   left: 0;
   right: 0;
   /*z-index: 999999;*/
-  z-index: 9999;
+  z-index: 99;
   border-top: 1px solid #ddd;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px 0px;
   overflow: auto;
-  display: none;
+  /*display: none;*/
   font-style: normal !important;
   text-align: center;
 }

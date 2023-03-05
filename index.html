@@ -244,7 +244,7 @@
 					<h2>Protokol Kesehatan</h2>
 					<p>Mohon untuk anda sahabat/kerabat dan saudara kami yang akan datang ke Akad maupun resepsi pernikahan kami untuk tetap memperhatikan protokol kesehatan yaitu Menggunakan Masker, Menjaga Jarak, Mencuci Tangan dan selalu menjaga kesehatan dan juga imun tubuh. Terima kasih</p>
 					  <img src="https://vicky-project.github.io/wedding/images/protocol-covid-19.png"
-					alt="Protocol images" class="img-responsive" />
+					alt="Protocol images" class="img-responsive" id="img-barcode" />
 				</div>
 			</div>
 		</div>
@@ -337,6 +337,25 @@
 	</div>
 	<embed name="musicWedding" src="https://vicky-project.github.io/wedding/beautifull-in-white.mp3"
 		autoplay="true" loop="true" hidden="true" />
+		
+<!--Bootstrap modal -->
+  <div class="modal fade" id="barcodeModal" tabindex="-1" role="dialog" aria-labelledby="barcodeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!-- Modal heading -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="barcodeModalLabel">QrCode</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <!-- Modal body with image -->
+        <div class="modal-body">
+          <img src="https://vicky-project.github.io/wedding/images/protocol-covid-19.png"
+					alt="Protocol images" class="img-responsive" />
+        </div>
+      </div>
+    </div>
+  </div>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -385,6 +404,11 @@
         month: 3,
         day: 15,
         enableUtc: false
+    });
+    
+    // Modal Barcode
+    $("#img-barcode").on("click", function(){
+      $("#barcodeModal").modal("show");
     });
     
     //Height Into

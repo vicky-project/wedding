@@ -252,5 +252,13 @@
     getUrlVars();
     music();
     sendMessage();
+
+    $("#form-ucapan").on("submit", function () {
+      const username = $("#name-of-undangan").text();
+      const pesan = $("#pesan-undangan").text();
+
+      sendMessage(`Ada pesan dari
+      ${username} : ${pesan}`);
+    });
   });
 })();

@@ -474,15 +474,6 @@
       alert("Copy to clipboard: " + $temp.val());
       $temp.remove();
     }
-    
-    $("#form-ucapan").on("submit", function() {
-      const username = $("#name-of-undangan").text();
-      const pesan = $("#pesan-undangan").text();
-      
-      sendMessage(encodeURIComponent(`Ada pesan dari
-      ${username} : ${pesan}`));
-    })
-   
 </script>
 
 	</body>

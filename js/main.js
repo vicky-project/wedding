@@ -232,7 +232,9 @@
       success: function (data) {
         if (data.ok) {
           alert("Terimakasih Pesan terkirim ke telegram.");
-          location.reload();
+          return location.reload();
+        } else {
+          alert("Gagal mengirim pesan");
         }
       },
     });

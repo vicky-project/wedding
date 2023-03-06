@@ -258,7 +258,6 @@
     $("#btn-submit").on("click", function (e) {
       var username = $("#name").val();
       var pesan = $("#pesan").val();
-      alert(username + " " + pesan);
 
       sendMessage(`Ada pesan dari
         **${username}**: ${pesan}`);

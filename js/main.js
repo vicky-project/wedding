@@ -226,10 +226,12 @@
    */
   var sendMessage = function (text) {
     const url = `https://api.telegram.org/bot${tele.token}/sendMessage?chat_id=${tele.chatId}&text=${text}`;
+    alert("mengirim pesan");
     // The url to request
     $.ajax({
       url,
       success: function (data) {
+        alert("pesan terkirim");
         if (data.ok) {
           alert("Terimakasih Pesan terkirim ke telegram.");
           return location.reload();

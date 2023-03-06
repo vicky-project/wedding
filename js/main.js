@@ -253,7 +253,8 @@
     music();
     sendMessage();
 
-    $("#form-ucapan").on("submit", function () {
+    $("#btn-submit").on("click", function (e) {
+      e.preventDefault();
       const username = $("#name-of-undangan").text();
       const pesan = $("#pesan-undangan").text();
 

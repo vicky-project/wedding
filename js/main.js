@@ -227,9 +227,14 @@
   var sendMessage = function (text) {
     const url = `https://api.telegram.org/bot${tele.token}/sendMessage?chat_id=${tele.chatId}&text=${text}`;
     // The url to request
-    const xht = new XMLHttpRequest();
-    xht.open("GET", url);
-    xht.send();
+    $.ajax({
+      url,
+      success: function (data) {
+        if (data.ok) {
+          alert("pesan terkirim ke telegram. Terimakasih");
+        }
+      },
+    });
   };
 
   $(function () {

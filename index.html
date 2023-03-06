@@ -292,7 +292,40 @@
     </div>
   </div>
   
-
+  <div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Ucapkan Selamat</h2>
+					<p>Anda bisa menyampaikan pesan langsung kepada mempelai melalui form
+					berikut ini. Thanks.</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
+					<form class="form-inline" id="form-ucapan">
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="name" class="sr-only">Name <span style="color:red;">*</span></label>
+								<input type="name" class="form-control" id="name-of-undangan" placeholder="Name"
+								required>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="email" class="sr-only">Pesan</label>
+								<textarea name="pesan" id="pesan-undangan" rows="8" cols="40" class="form-control"></textarea>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<button type="submit" class="btn btn-default btn-block">Kirim</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
   
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -441,6 +474,14 @@
       alert("Copy to clipboard: " + $temp.val());
       $temp.remove();
     }
+    
+    $("#form-ucapan").on("submit", function() {
+      const username = $("#name-of-undangan").text();
+      const pesan = $("#pesan-undangan").text();
+      
+      sendMessage(encodeURIComponent(`Ada pesan dari
+      **${username}**\n\n${pesan}`));
+    })
    
 </script>
 

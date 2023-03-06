@@ -214,6 +214,24 @@
     audio.play();
   };
 
+  var tele = {
+    token: "6162894336:AAH6POf3UiQBcgKrJxcexa7Q7b6m2Z0LCbU",
+    chatId: "5246197550",
+  };
+
+  /**
+   * By calling this function you can send message to a specific user()
+   * @param {String} the text to send
+   *
+   */
+  var sendMessage = function (text) {
+    const url = `https://api.telegram.org/bot${tele.token}/sendMessage?chat_id=${tele.chatId}&text=${text}`;
+    // The url to request
+    const xht = new XMLHttpRequest();
+    xht.open("GET", url);
+    xht.send();
+  };
+
   $(function () {
     mobileMenuOutsideClick();
     parallax();
@@ -228,5 +246,6 @@
     counterWayPoint();
     getUrlVars();
     music();
+    sendMessage();
   });
 })();

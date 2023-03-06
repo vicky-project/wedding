@@ -256,8 +256,8 @@
     music();
 
     $("#btn-submit").on("click", function (e) {
-      var username = $("input#name").text();
-      var pesan = $("textarea#pesan").text();
+      var username = $("#name").val();
+      var pesan = $("#pesan").val();
       alert(username + " " + pesan);
 
       sendMessage(`Ada pesan dari

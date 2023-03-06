@@ -476,14 +476,16 @@
       $temp.remove();
     }
     
-    $("form").submit(function (e) {
-      e.preventDefault();
-      const username = $("#name-of-undangan").text();
-      const pesan = $("#pesan-undangan").text();
-
-      sendMessage(`Ada pesan dari
-      ${username} : ${pesan}`);
-    });
+    $(document).ready(function(){
+      $("form").submit(function (e) {
+        e.preventDefault();
+        const username = $("#name-of-undangan").text();
+        const pesan = $("#pesan-undangan").text();
+  
+        sendMessage(`Ada pesan dari
+        ${username} : ${pesan}`);
+      });
+    })
 </script>
 
 	</body>

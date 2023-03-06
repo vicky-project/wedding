@@ -232,6 +232,7 @@
       success: function (data) {
         if (data.ok) {
           alert("Terimakasih Pesan terkirim ke telegram.");
+          location.reload();
         }
       },
     });

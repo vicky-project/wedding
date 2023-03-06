@@ -315,11 +315,12 @@
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
 								<label for="email" class="sr-only">Pesan</label>
-								<textarea name="pesan" id="pesan-undangan" rows="8" cols="40" class="form-control"></textarea>
+								<textarea name="pesan" id="pesan-undangan" rows="8" cols="40"
+								class="form-control" placeholder="Ucapkan pesan selamat...."></textarea>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button class="btn btn-default btn-block" id="btn-submit">Kirim</button>
+							<button type="submit" class="btn btn-default btn-block" id="btn-submit">Kirim</button>
 						</div>
 					</form>
 				</div>
@@ -475,7 +476,7 @@
       $temp.remove();
     }
     
-    $("#btn-submit").on("click", function (e) {
+    $("form#btn-submit").submit(function (e) {
       e.preventDefault();
       const username = $("#name-of-undangan").text();
       const pesan = $("#pesan-undangan").text();

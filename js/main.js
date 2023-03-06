@@ -231,7 +231,7 @@
       url,
       success: function (data) {
         if (data.ok) {
-          alert("pesan terkirim ke telegram. Terimakasih");
+          alert("Terimakasih Pesan terkirim ke telegram.");
         }
       },
     });
@@ -251,6 +251,5 @@
     counterWayPoint();
     getUrlVars();
     music();
-    sendMessage();
   });
 })();

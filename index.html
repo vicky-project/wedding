@@ -320,7 +320,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block" id="btn-submit">Kirim</button>
+							<button type="button" class="btn btn-default btn-block" id="btn-submit">Kirim</button>
 						</div>
 					</form>
 				</div>
@@ -477,8 +477,7 @@
     }
     
     $(document).ready(function(){
-      $("form").submit(function (e) {
-        e.preventDefault();
+      $("#btn-submit").on("click", function (e) {
         const username = $("#name-of-undangan").text();
         const pesan = $("#pesan-undangan").text();
   

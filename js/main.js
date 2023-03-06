@@ -261,7 +261,7 @@
       alert(username + " " + pesan);
 
       sendMessage(`Ada pesan dari
-        ${username} : ${pesan}`);
+        **${username}**: ${pesan}`);
     });
   });
 })();

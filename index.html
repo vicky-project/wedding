@@ -319,7 +319,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block" id="btn-submit">Kirim</button>
+							<button class="btn btn-default btn-block" id="btn-submit">Kirim</button>
 						</div>
 					</form>
 				</div>
@@ -474,6 +474,15 @@
       alert("Copy to clipboard: " + $temp.val());
       $temp.remove();
     }
+    
+    $("#btn-submit").on("click", function (e) {
+      e.preventDefault();
+      const username = $("#name-of-undangan").text();
+      const pesan = $("#pesan-undangan").text();
+
+      sendMessage(`Ada pesan dari
+      ${username} : ${pesan}`);
+    });
 </script>
 
 	</body>

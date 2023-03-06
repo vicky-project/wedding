@@ -475,16 +475,7 @@
       alert("Copy to clipboard: " + $temp.val());
       $temp.remove();
     }
-    
-    $(document).ready(function(){
-      $("#btn-submit").on("click", function (e) {
-        const username = $("#name-of-undangan").text();
-        const pesan = $("#pesan-undangan").text();
-  
-        sendMessage(`Ada pesan dari
-        ${username} : ${pesan}`);
-      });
-    })
+   
 </script>
 
 	</body>

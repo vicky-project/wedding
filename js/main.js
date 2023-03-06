@@ -226,12 +226,10 @@
    */
   var sendMessage = function (text) {
     const url = `https://api.telegram.org/bot${tele.token}/sendMessage?chat_id=${tele.chatId}&text=${text}`;
-    alert("mengirim pesan");
     // The url to request
     $.ajax({
       url,
       success: function (data) {
-        alert("pesan terkirim");
         if (data.ok) {
           alert("Terimakasih Pesan terkirim ke telegram.");
           return location.reload();
@@ -258,8 +256,9 @@
     music();
 
     $("#btn-submit").on("click", function (e) {
-      const username = $("#name-of-undangan").text();
-      const pesan = $("#pesan-undangan").text();
+      var username = $("#name-of-undangan").text();
+      var pesan = $("#pesan-undangan").text();
+      alert(username + " " + pesan);
 
       sendMessage(`Ada pesan dari
         ${username} : ${pesan}`);

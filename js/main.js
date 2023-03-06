@@ -260,7 +260,7 @@
       var pesan = $("#pesan").val();
 
       sendMessage(`Ada pesan dari
-        **${username}**: ${pesan}`);
+       ${username}: ${pesan}`);
     });
   });
 })();

@@ -258,7 +258,7 @@
     $("#btn-submit").on("click", function (e) {
       var username = $("#name").val();
       var pesan = $("#pesan").val();
-      if (undefined === username || username === "") {
+      if (undefined == username || username == "" || username == null) {
         alert("Kolom Nama masih kosong.");
         return;
       }

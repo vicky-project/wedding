@@ -258,6 +258,10 @@
     $("#btn-submit").on("click", function (e) {
       var username = $("#name").val();
       var pesan = $("#pesan").val();
+      if (undefined === username || username === "") {
+        alert("Kolom Nama masih kosong.");
+        return;
+      }
 
       sendMessage(`Ada pesan dari
        ${username}: ${pesan}`);

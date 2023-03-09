@@ -263,6 +263,8 @@
         <div class="col-md-6 col-md-offset-2 text-center fh5co-heading animate-box">
           <br><h2>Kirim Kado</h2>
           <p>Terima kasih atas doa dan restu yang telah anda berikan, jika anda ingin mengirimkan kado nikah, silahkan kirim dengan cara dibawah ini. Sebelumnya, kami mengucapkan banyak terima kasih.</p>
+          <p><button type="button" class="btn btn-primary" data-toggle="modal"
+          data-target="#kadoModal">Kirim kado</button></p>
           <div class="p-4 bg-white text-center radius-10 card-undangan hover mt-4">
             <img src="https://vicky-project.github.io/wedding/images/mandiri_logo.png"
               class="img-fluid w-100" alt="" height="100">
@@ -377,7 +379,7 @@
 	<embed name="musicWedding" src="https://vicky-project.github.io/wedding/beautifull-in-white.mp3"
 		autoplay="true" loop="true" hidden="true" />
 		
-<!--Bootstrap modal -->
+<!-- QrCode modal -->
 <div class="modal fade" id="barcodeModal" tabindex="-1" role="dialog" aria-labelledby="barcodeModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -393,6 +395,25 @@
 			 <hr />
 			 <small><a href="https://maps.app.goo.gl/ZK7PGcVm7sm3qo5V6">https://maps.app.goo.gl/ZK7PGcVm7sm3qo5V6</a></small>
 			</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Kado modal -->
+<div class="modal fade" id="kadoModal" tabindex="-1" role="dialog"
+aria-labelledby="kadoModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="kadoModalTitle">Kirim Kado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"></div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>

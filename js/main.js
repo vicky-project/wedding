@@ -215,8 +215,8 @@
   };
 
   var tele = {
-    token: "6162894336:AAH6POf3UiQBcgKrJxcexa7Q7b6m2Z0LCbU",
-    chatId: "5246197550",
+    token: "",
+    chatId: "",
   };
 
   /**
